@@ -6,5 +6,13 @@ SimpleCov.start do
   add_filter "/spec/"
 end
 
+require 'bundler/setup'
+
 require 'string_tools'
 require 'pry-byebug'
+
+require 'combustion'
+
+Combustion.initialize! :all
+
+require 'rspec/rails'
